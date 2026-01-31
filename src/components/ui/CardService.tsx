@@ -1,14 +1,10 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
 import { ServiceCardProps } from '../../types';
-import Button from './Button';
 
 const CardService: React.FC<ServiceCardProps> = ({
   icon,
   title,
-  description,
-  buttonText,
-  onButtonClick
+  description
 }) => {
   return (
     <motion.div
@@ -19,15 +15,7 @@ const CardService: React.FC<ServiceCardProps> = ({
         {icon}
       </div>
       <h3 className="text-xl font-bold text-coffee-800 mb-3">{title}</h3>
-      <p className="text-gray-600 mb-6 flex-grow leading-relaxed">{description}</p>
-      <Button 
-        variant="ghost" 
-        size="sm" 
-        onClick={onButtonClick}
-        className="group-hover:text-emerald-600 flex items-center gap-2"
-      >
-        {buttonText} <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-      </Button>
+      <p className="text-gray-600 flex-grow leading-relaxed">{description}</p>
     </motion.div>
   );
 };

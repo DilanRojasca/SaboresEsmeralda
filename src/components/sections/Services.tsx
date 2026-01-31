@@ -5,32 +5,27 @@ const SERVICES = [
   {
     icon: <Coffee className="w-8 h-8" />,
     title: 'Café de Origen',
-    description: 'Selección exclusiva de los mejores granos de Quindío, Nariño y Huila, tostados a la perfección.',
-    buttonText: 'Ver variedades'
+    description: 'Selección exclusiva de los mejores granos de Quindío, Nariño y Huila, tostados a la perfección.'
   },
   {
     icon: <Gem className="w-8 h-8" />,
     title: 'Joyería Auténtica',
-    description: 'Esmeraldas certificadas de Boyacá y piezas únicas elaboradas por artesanos locales.',
-    buttonText: 'Ver colección'
+    description: 'Esmeraldas certificadas de Boyacá y piezas únicas elaboradas por artesanos locales.'
   },
   {
     icon: <Music className="w-8 h-8" />,
     title: 'Clases Culturales',
-    description: 'Aprende a bailar salsa caleña y champeta con instructores expertos en clases virtuales.',
-    buttonText: 'Reservar clase'
+    description: 'Aprende a bailar salsa caleña y champeta con instructores expertos en clases virtuales.'
   },
   {
     icon: <ShoppingBag className="w-8 h-8" />,
     title: 'Kits Típicos',
-    description: 'Cajas de regalo con arepas, panela, aguardiente y chocolate para sentirte en casa.',
-    buttonText: 'Ver kits'
+    description: 'Cajas de regalo con arepas, panela, aguardiente y chocolate para sentirte en casa.'
   },
   {
     icon: <Video className="w-8 h-8" />,
     title: 'Experiencias Virtuales',
-    description: 'Tours guiados por cafetales y pueblos patrimonio desde la comodidad de tu hogar.',
-    buttonText: 'Explorar tours'
+    description: 'Tours guiados por cafetales y pueblos patrimonio desde la comodidad de tu hogar.'
   }
 ];
 

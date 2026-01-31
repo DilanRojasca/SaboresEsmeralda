@@ -10,8 +10,6 @@ export interface ServiceCardProps {
   icon: ReactNode;
   title: string;
   description: string;
-  buttonText: string;
-  onButtonClick?: () => void;
 }
 
 export interface Product {
