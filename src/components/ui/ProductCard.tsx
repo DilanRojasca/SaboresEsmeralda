@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ShoppingCart } from 'lucide-react';
+
 import { ProductCardProps } from '../../types';
 import Button from './Button';
 import Image from './Image';

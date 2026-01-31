@@ -1,4 +1,4 @@
-import { Coffee, Gem, Music, ShoppingBag, Globe, Award, Leaf, Truck, MapPin } from 'lucide-react';
+import { Coffee, Gem, Music, Globe, Award, Leaf, Truck, MapPin } from 'lucide-react';
 import { Product, Testimonial } from '../types';
 
 export const FALLBACK_IMAGE = 'https://placehold.co/600x400/046c47/FFF?text=Sabores+Esmeralda';
@@ -7,7 +7,7 @@ export const FALLBACK_AVATAR = 'https://placehold.co/200x200/046c47/FFF?text=Usu
 export const NAV_LINKS = [
   { name: 'Inicio', href: '#home' },
   { name: 'Servicios', href: '#services' },
-  { name: 'Productos', href: '#products' },
+  { name: 'Cultura', href: '#products' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -61,28 +61,28 @@ export const TESTIMONIALS: Testimonial[] = [
     name: 'María Fernanda',
     city: 'Medellín',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=200',
-    text: 'El café es espectacular, realmente sabe a las montañas de mi tierra. El envío fue muy rápido.'
+    text: 'El café es espectacular, realmente me transporta a las montañas de mi tierra. Una experiencia auténtica.'
   },
   {
     id: '2',
     name: 'Carlos Andrés',
     city: 'Barranquilla',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200',
-    text: 'Compré el kit de salsa para regalar a mis amigos en el exterior y quedaron encantados. ¡Gracias!'
+    text: 'Compartir la historia de nuestra cultura con amigos del exterior ha sido increíble. ¡Es un orgullo!'
   },
   {
     id: '3',
     name: 'Laura Camila',
     city: 'Bogotá',
     image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200',
-    text: 'Las esmeraldas son preciosas y auténticas. Me siento orgullosa de llevar un pedacito de Colombia.'
+    text: 'Las esmeraldas son preciosas y auténticas. Me siento orgullosa de llevar un pedacito de Colombia siempre.'
   },
   {
     id: '4',
     name: 'Juan David',
     city: 'Cali',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=200',
-    text: 'Excelente servicio al cliente y productos de muy alta calidad. Recomiendo totalmente Sabores Esmeralda.'
+    text: 'Excelente información y curaduría de nuestra herencia. Recomiendo totalmente sumergirse en Sabores Esmeralda.'
   }
 ];
 

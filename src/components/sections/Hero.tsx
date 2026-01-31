@@ -35,16 +35,20 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button size="lg" className="w-full sm:w-auto shadow-emerald-900/20">
-              Conoce Colombia
-            </Button>
-            <Button 
-              variant="outline" 
-              size="lg" 
-              className="w-full sm:w-auto text-white border-white hover:bg-white hover:text-coffee-800"
-            >
-              Ver Servicios
-            </Button>
+            <a href="#products" className="w-full sm:w-auto">
+              <Button size="lg" className="w-full shadow-emerald-900/20">
+                Conoce Colombia
+              </Button>
+            </a>
+            <a href="#services" className="w-full sm:w-auto">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="w-full text-white border-white hover:bg-white hover:text-coffee-800"
+              >
+                Ver Servicios
+              </Button>
+            </a>
           </div>
         </motion.div>
       </div>

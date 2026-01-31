@@ -1,4 +1,4 @@
-import { Coffee, Gem, Music, ShoppingBag, Video } from 'lucide-react';
+import { Coffee, Gem, Music, Gift, Video } from 'lucide-react';
 import CardService from '../ui/CardService';
 
 const SERVICES = [
@@ -18,7 +18,7 @@ const SERVICES = [
     description: 'Aprende a bailar salsa caleña y champeta con instructores expertos en clases virtuales.'
   },
   {
-    icon: <ShoppingBag className="w-8 h-8" />,
+    icon: <Gift className="w-8 h-8" />,
     title: 'Kits Típicos',
     description: 'Cajas de regalo con arepas, panela, aguardiente y chocolate para sentirte en casa.'
   },
