@@ -48,3 +48,13 @@ coverage
 Thumbs.db
 ehthumbs.db
 Desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+.pytest_cache/
+.coverage
+htmlcov/
