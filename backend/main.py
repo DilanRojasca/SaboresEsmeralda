@@ -3,7 +3,7 @@ import uvicorn
 
 app = FastAPI(title="Sabores Esmeralda API")
 
-@app.get("/")
+@app.get("/")#funcion get para la ruta raiz
 async def root():
     return {"message": "Welcome to Sabores Esmeralda API"}
 
