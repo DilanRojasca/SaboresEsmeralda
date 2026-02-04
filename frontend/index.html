@@ -1,19 +1,113 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sabores Esmeralda</title>
+
+    <!-- Primarias SEO -->
+    <title>Sabores Esmeralda | Auténtica Herencia y Sabores de Colombia</title>
+    <meta
+      name="title"
+      content="Sabores Esmeralda | Auténtica Herencia y Sabores de Colombia"
+    />
+    <meta
+      name="description"
+      content="Descubre la autenticidad de Colombia en Sabores Esmeralda. Ofrecemos café de altura, esmeraldas de Boyacá, artesanías y experiencias culturales únicas que cuentan la historia de nuestra tierra."
+    />
+    <meta
+      name="keywords"
+      content="Colombia, café colombiano, esmeraldas, artesanías, cultura colombiana, productos típicos, Sabores Esmeralda, Boyacá, tradición"
+    />
+    <meta name="author" content="Sabores Esmeralda" />
+    <link rel="canonical" href="https://saboresesmeralda.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://saboresesmeralda.com/" />
+    <meta
+      property="og:title"
+      content="Sabores Esmeralda | Auténtica Herencia y Sabores de Colombia"
+    />
+    <meta
+      property="og:description"
+      content="Descubre la autenticidad de Colombia. Café de altura, esmeraldas de Boyacá y experiencias culturales únicas en un solo lugar."
+    />
+    <meta
+      property="og:image"
+      content="https://saboresesmeralda.com/og-image.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://saboresesmeralda.com/" />
+    <meta
+      property="twitter:title"
+      content="Sabores Esmeralda | Auténtica Herencia y Sabores de Colombia"
+    />
+    <meta
+      property="twitter:description"
+      content="Descubre la autenticidad de Colombia. Café de altura, esmeraldas de Boyacá y experiencias culturales únicas."
+    />
+    <meta
+      property="twitter:image"
+      content="https://saboresesmeralda.com/og-image.jpg"
+    />
+
+    <!-- Robots -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Sabores Esmeralda",
+        "image": "https://saboresesmeralda.com/og-image.jpg",
+        "description": "Sabores auténticos de Colombia: Café de altura, esmeraldas de Boyacá y experiencias culturales únicas.",
+        "@id": "https://saboresesmeralda.com",
+        "url": "https://saboresesmeralda.com",
+        "telephone": "+573135220444",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle 93 # 11-45",
+          "addressLocality": "Bogotá",
+          "addressCountry": "CO"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 4.6768,
+          "longitude": -74.0483
+        },
+        "sameAs": [
+          "https://www.instagram.com/saboresesmeralda",
+          "https://www.facebook.com/saboresesmeralda"
+        ],
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      }
+    </script>
+    
     <script type="module">
       if (import.meta.hot?.on) {
-        import.meta.hot.on('vite:error', (error) => {
+        import.meta.hot.on("vite:error", (error) => {
           if (error.err) {
             console.error(
-              [error.err.message, error.err.frame].filter(Boolean).join('\n'),
-            )
+              [error.err.message, error.err.frame].filter(Boolean).join("\n"),
+            );
           }
-        })
+        });
       }
     </script>
   </head>
