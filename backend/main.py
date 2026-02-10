@@ -1,12 +1,16 @@
+import os
+import sys
+
+# Asegura que el directorio `backend` esté en sys.path cuando se ejecute desde la raíz
+sys.path.insert(0, os.path.dirname(__file__))
+
 from fastapi import FastAPI
-import uvicorn
+from app.routes.auth_routes import router
 
-app = FastAPI(title="Sabores Esmeralda API")
+app = FastAPI()
 
-@app.get("/")#funcion get para la ruta raiz
-async def root():
-    return {"message": "Welcome to Sabores Esmeralda API"}
+app.include_router(router)
 
-if __name__ == "__main__":
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
-#Prueba de sync fork
+@app.get("/")
+def root():
+    return {"status": "Backend funcionando correctamente"}
