@@ -1,24 +1,38 @@
-import Navbar from './components/layout/Navbar';
-import Footer from './components/layout/Footer';
-import Hero from './components/sections/Hero';
-import Services from './components/sections/Services';
-import FeaturedProducts from './components/sections/FeaturedProducts';
-import Testimonials from './components/sections/Testimonials';
-import WhyChooseUs from './components/sections/WhyChooseUs';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+
+import Hero from "./components/sections/Hero";
+import FeaturedProducts from "./components/sections/FeaturedProducts";
+import Services from "./components/sections/Services";
+import Testimonials from "./components/sections/Testimonials";
+import WhyChooseUs from "./components/sections/WhyChooseUs";
+
+function Home() {
+  return (
+    <>
+      <Hero />
+      <FeaturedProducts />
+      <Services />
+      <WhyChooseUs />
+      <Testimonials />
+    </>
+  );
+}
 
 function App() {
   return (
-    <div className="min-h-screen font-sans bg-cream selection:bg-emerald-500 selection:text-white">
+    <BrowserRouter>
       <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <FeaturedProducts />
-        <WhyChooseUs />
-        <Testimonials />
-      </main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 

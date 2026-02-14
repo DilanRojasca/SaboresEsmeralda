@@ -6,8 +6,7 @@ export const FALLBACK_AVATAR = 'https://placehold.co/200x200/046c47/FFF?text=Usu
 
 export const NAV_LINKS = [
   { name: 'Inicio', href: '#home' },
-  { name: 'Servicios', href: '#services' },
-  { name: 'Cultura', href: '#products' },
+  
 ];
 
 export const PRODUCTS: Product[] = [
