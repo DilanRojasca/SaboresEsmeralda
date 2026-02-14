@@ -1,9 +1,9 @@
+import { Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Coffee, Gem } from 'lucide-react';
 import { cn } from '../../lib/utils';
 import { NAV_LINKS } from '../../utils/constants';
-import Button from '../ui/Button';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,19 +26,22 @@ const Navbar = () => {
       )}
     >
       <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
+
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
+        <Link to="/" className="flex items-center gap-2 group">
           <div className="relative">
             <Coffee className={cn("w-8 h-8 transition-colors", isScrolled ? "text-coffee-800" : "text-white")} />
             <Gem className="w-4 h-4 text-emerald-500 absolute -top-1 -right-1 animate-pulse" />
           </div>
-          <span className={cn(
-            "font-bold text-xl md:text-2xl tracking-tight transition-colors",
-            isScrolled ? "text-coffee-800" : "text-white"
-          )}>
+          <span
+            className={cn(
+              "font-bold text-xl md:text-2xl tracking-tight transition-colors",
+              isScrolled ? "text-coffee-800" : "text-white"
+            )}
+          >
             Sabores Esmeralda
           </span>
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
@@ -54,8 +57,26 @@ const Navbar = () => {
               {link.name}
             </a>
           ))}
-        </div>
 
+          {/* 🔥 LOGIN */}
+          <Link
+            to="/login"
+            className={cn(
+              "font-medium transition-colors hover:text-emerald-500",
+              isScrolled ? "text-gray-600" : "text-white/90"
+            )}
+          >
+            Iniciar Sesión
+          </Link>
+
+          {/* 🔥 REGISTER */}
+          <Link
+            to="/register"
+            className="bg-emerald-600 text-white px-4 py-2 rounded-full hover:bg-emerald-700 transition"
+          >
+            Registro
+          </Link>
+        </div>
 
         {/* Mobile Menu Button */}
         <button
@@ -92,6 +113,23 @@ const Navbar = () => {
                 </a>
               ))}
 
+              {/* 🔥 LOGIN MOBILE */}
+              <Link
+                to="/login"
+                className="text-lg font-medium text-gray-700 hover:text-emerald-500 py-2 border-b border-gray-50"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Iniciar Sesión
+              </Link>
+
+              {/* 🔥 REGISTER MOBILE */}
+              <Link
+                to="/register"
+                className="bg-emerald-600 text-white px-4 py-2 rounded-full text-center mt-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Registro
+              </Link>
             </div>
           </motion.div>
         )}
