@@ -1,0 +1,63 @@
+/* Register.css */
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+}
+
+.register-card {
+  background-color: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: var(--radius-xl);
+  width: 26rem;
+  box-shadow: var(--shadow-lg);
+}
+
+.register-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.register-input {
+  width: 100%;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  margin-bottom: 1.25rem;
+  outline: none;
+  font-size: 1rem;
+  transition: var(--transition);
+}
+
+.register-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(4, 108, 71, 0.1);
+}
+
+.register-button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-white);
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  border-radius: var(--radius-full);
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.register-button:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+.register-button:active {
+  transform: translateY(0);
+}
