@@ -4,10 +4,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 50%, #4a2c0b 100%);
+  position: relative;
+}
+
+.login-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
 }
 
 .login-card {
+  position: relative;
+  z-index: 1;
   background-color: var(--bg-card);
   padding: 2.5rem;
   border-radius: var(--radius-xl);
@@ -47,11 +58,19 @@
   position: absolute;
   right: 1.25rem;
   top: 0.75rem;
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
   color: var(--primary-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition);
+}
+
+.password-toggle:hover {
+  opacity: 0.7;
 }
 
 .login-button {
@@ -70,9 +89,10 @@
 
 .login-button:hover {
   background-color: var(--primary-hover);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.3);
 }
 
 .login-button:active {
-  transform: translateY(0);
+  transform: scale(0.98);
 }
