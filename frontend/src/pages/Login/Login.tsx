@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { LuEye, LuEyeOff } from "react-icons/lu";
 import "./Login.css";
 
 const Login = () => {
@@ -23,12 +24,14 @@ const Login = () => {
             placeholder="Contraseña"
             className="login-input"
           />
-          <span
+          <button
+            type="button"
             className="password-toggle"
             onClick={() => setShowPassword(!showPassword)}
+            aria-label={showPassword ? "Ocultar contraseña" : "Mostrar contraseña"}
           >
-            {showPassword ? "🙈" : "👁️"}
-          </span>
+            {showPassword ? <LuEyeOff size={20} /> : <LuEye size={20} />}
+          </button>
         </div>
 
         <button className="login-button">
