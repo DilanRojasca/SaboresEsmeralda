@@ -8,6 +8,9 @@ import FeaturedProducts from "./components/sections/FeaturedProducts";
 import Services from "./components/sections/Services";
 import Testimonials from "./components/sections/Testimonials";
 import WhyChooseUs from "./components/sections/WhyChooseUs";
+import CrearProducto from "./pages/CrearProducto";
+import Catalogo from "./pages/Catalogo";
+import { ProductProvider } from "./context/ProductContext";
 
 function Home() {
   return (
@@ -23,15 +26,19 @@ function Home() {
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <ProductProvider>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/catalogo" element={<Catalogo />} />
+          <Route path="/crear-producto" element={<CrearProducto />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </ProductProvider>
   );
 }
 
