@@ -1,13 +1,6 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from "react";
+import { Product } from "../types";
 
-
-// Se define el tipo de producto
-interface Product {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
-}
 
 // Se define el tipo del contexto
 interface ProductContextType {

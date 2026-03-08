@@ -5,8 +5,8 @@ export const FALLBACK_IMAGE = 'https://placehold.co/600x400/046c47/FFF?text=Sabo
 export const FALLBACK_AVATAR = 'https://placehold.co/200x200/046c47/FFF?text=Usuario';
 
 export const NAV_LINKS = [
-  { name: 'Inicio', href: '#home' },
-  
+  { name: 'Inicio', href: '/' },
+  { name: 'Catálogo', href: '/catalogo' },
 ];
 
 export const PRODUCTS: Product[] = [
@@ -15,42 +15,48 @@ export const PRODUCTS: Product[] = [
     name: 'Café Supremo',
     description: 'Cultivado en las altas montañas andinas, este café representa la tradición y el alma de nuestros cafeteros.',
     image: '/images/cafe.png',
-    category: 'Café'
+    category: 'Café',
+    price: 45000
   },
   {
     id: '2',
     name: 'Esmeraldas Colombianas',
     description: 'Piedras preciosas únicas en el mundo por su color y pureza, extraídas del corazón de Boyacá.',
     image: '/images/esmeraldas.png',
-    category: 'Joyería'
+    category: 'Joyería',
+    price: 1250000
   },
   {
     id: '3',
     name: 'Ritmo y Sabor',
     description: 'La salsa no solo se escucha, se vive. Una expresión cultural que mueve a todo un país.',
     image: '/images/salsa.png',
-    category: 'Cultura'
+    category: 'Cultura',
+    price: 15000
   },
   {
     id: '4',
     name: 'Licores Tradicionales',
     description: 'El aguardiente es más que una bebida, es el acompañante de nuestras celebraciones y alegrías.',
     image: '/images/aguardiente.png',
-    category: 'Tradición'
+    category: 'Tradición',
+    price: 35000
   },
   {
     id: '5',
     name: 'Cacao de Origen',
     description: 'Chocolate fino de aroma, fruto del trabajo de comunidades campesinas que transforman el campo.',
     image: '/images/cacao.png',
-    category: 'Gastronomía'
+    category: 'Gastronomía',
+    price: 28000
   },
   {
     id: '6',
     name: 'Artesanías Vueltiao',
     description: 'El símbolo cultural de la nación, tejido con caña flecha por maestros artesanos del caribe.',
     image: '/images/sombrero.png',
-    category: 'Artesanías'
+    category: 'Artesanías',
+    price: 180000
   }
 ];
 
