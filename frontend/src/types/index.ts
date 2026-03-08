@@ -18,6 +18,7 @@ export interface Product {
   description: string;
   image: string;
   category: string;
+  price: number;
 }
 
 export interface ProductCardProps {

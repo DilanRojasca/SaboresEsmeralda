@@ -46,16 +46,16 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {NAV_LINKS.map((link) => (
-            <a
+            <Link
               key={link.name}
-              href={link.href}
+              to={link.href}
               className={cn(
                 "font-medium transition-colors hover:text-emerald-500",
                 isScrolled ? "text-gray-600" : "text-white/90"
               )}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
 
           {/* 🔥 LOGIN */}
@@ -103,14 +103,14 @@ const Navbar = () => {
           >
             <div className="container mx-auto px-4 py-6 flex flex-col gap-4">
               {NAV_LINKS.map((link) => (
-                <a
+                <Link
                   key={link.name}
-                  href={link.href}
+                  to={link.href}
                   className="text-lg font-medium text-gray-700 hover:text-emerald-500 py-2 border-b border-gray-50"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
-                </a>
+                </Link>
               ))}
 
               {/* 🔥 LOGIN MOBILE */}

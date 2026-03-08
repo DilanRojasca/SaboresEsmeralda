@@ -16,10 +16,10 @@ const Button: React.FC<MotionButtonProps> = ({
   ...props
 }) => {
   const variants = {
-    primary: 'bg-emerald-500 text-white hover:bg-emerald-400 shadow-md hover:shadow-lg',
-    secondary: 'bg-coffee-800 text-white hover:bg-coffee-600 shadow-md hover:shadow-lg',
-    outline: 'border-2 border-emerald-500 text-emerald-500 hover:bg-emerald-50',
-    ghost: 'text-emerald-500 hover:bg-emerald-50/50',
+    primary: 'bg-[var(--primary-color)] text-white hover:bg-[var(--primary-hover)] shadow-md hover:shadow-lg',
+    secondary: 'bg-[var(--secondary-color)] text-white hover:bg-[var(--secondary-hover)] shadow-md hover:shadow-lg',
+    outline: 'border-2 border-[var(--primary-color)] text-[var(--primary-color)] hover:bg-[var(--primary-color)]/10',
+    ghost: 'text-[var(--primary-color)] hover:bg-[var(--primary-color)]/5',
   };
 
   const sizes = {
