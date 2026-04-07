@@ -58,3 +58,17 @@ venv/
 .pytest_cache/
 .coverage
 htmlcov/
+
+#claude
+CLAUDE.md
+dashboard.html
+TASKS.md
+.claude/
+.memory/
+glossary.md
+dilan.md
+.claude/skills/
+gregorio.md
+sabores-esmeralda.md
+.claude/skills/gregorio.md
+.claude/skills/dilan.md
